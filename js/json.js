@@ -27,17 +27,20 @@ var json2 = {
 	{
 		"name": "SS Ticonderoga",
 		"class": "Planetary Destroyer",
-		"cores": 35
+		"cores": 35,
+		"crew": 100 + " Needed"
 	},
 	{
 		"name": "SS Paladium",
 		"class": "Galactic Frigate",
-		"cores": 50
+		"cores": 50,
+		"crew": 135 + " Needed"
 	},
 	{
 		"name": "Nimbus 12",
 		"class": "Capital Cruiser",
-		"cores": 100
+		"cores": 100,
+		"crew": 200 + " Needed"
 	}
 	]
 };
