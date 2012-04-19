@@ -44,23 +44,20 @@ var listShips = function (json2) {
 
 listShips(json2);
 
-say("Captain, in order to depart we need the required Crewmen and Warp cores.");
+say( "There are currently:" + starSystems.length + " Previously explored star systems" );
 
-
-//trying to add up all cores and crew members using a function.
-/*var totalCores = function(json2) {
-	for (var i = 0; i < json2.ships.cores.length; i++) {
-		var core = json2.ships.cores[i];
-		say("We need:" + ship.cores + " total.");
-	};
+for (var i=0, j=starSystems.length; i < j; i++) {
+	say( starSystems[i] );
 };
 
-totalCores(json2);*/
+
+
+say("Captain, in order to depart we need the required Crewmen and Warp cores.");
 
 //Boolean comparison
 var isReady = function(cores, crew) {
 	if (cores>=185 && crew>=435) {
-	var ready = "There are " + cores + " reactor cores available, and there are " + crew + " crew members available.";
+	var ready = "There are " + cores + " reactor cores available, and there are " + crew + " crew members available." + " We are cleared for departure";
 	return ready
 	}; 
 		if (cores<185 || crew<435);
@@ -72,3 +69,14 @@ var isReady = function(cores, crew) {
 
 var ready = isReady(coreInventory, crewInventory);
 say(ready || notReady);
+
+//While loop, for exploring planets. 
+
+captain.warpTo();
+
+var planets = 13;
+while (planets > 0) {
+	say( "Looking for rebel presence on planet #" + planets );
+	planets--;
+};
+
