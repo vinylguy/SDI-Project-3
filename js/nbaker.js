@@ -85,10 +85,12 @@ say(ready || notReady);
 
 readyToDepart(true); 
 
+//Mutator Method
 starSystems.push("Karibe 6")
 
 say("Captain we have discovered a new star system!" + " We have named it: " + starSystems[4] + " This star system has 13 planets to explore");
 
+//Accessor Methods
 captain.warpTo(starSystems[4]);
 
 captain.getPosition(starSystems[4]);
@@ -103,3 +105,5 @@ while (planets > 0) {
 };
 
 say("Captain it looks like there is no rebel presence in this star system");
+
+say("Captain's LOG:" + starSystems[4] + " Has been explored and logged.");
